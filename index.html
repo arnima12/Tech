@@ -19,314 +19,325 @@
 
 <body class="">
 
-    <header class="bg-lime-300">
+    <header class="bg-lime-300 fixed inset-x-0 translate-y-0 z-40 transition-all ease-in-out duration-300">
         <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
             <nav class="flex justify-between p-4">
-                <div class="logo flex-none w-[20%]">
-                    <li class="list-none"><img src="image/logo.png" alt="logo" class="max-w-xs max-h-12"></li>
+                <div class="flex-none w-[20%]">
+                    <img src="image/logo.png" alt="logo" class="max-w-xs max-h-12">
                 </div>
-                <div class="list flex w-[80%] justify-between gap-4 text-black font-semibold text-xl list-none">
-                    <div class="">
-                        <li><a href="#"><input type="text" placeholder="Search" class="text-center py-2 rounded"></a>
-                        </li>
+                
+                    <div class="flex justify-between gap-4 w-[80%] hidden text-black font-semibold text-xl list-none lg:flex">
+                        <div>
+                            <a href="#"><input type="text" placeholder="Search" class="text-center py-2 rounded"></a>
+                        </div>
+                        <div>
+                            <ul class="flex justify-between gap-4 lg:flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="category.html">Category</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="#" class="bg-lime-500 px-4 py-2 rounded">Login</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="xl:hidden">
-                        <i class="fa-solid fa-bars text-4xl"></i>
-                    </div>
-                    <div class="flex justify-between gap-4 hidden xl:flex">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                        <li><a href="#" class="bg-lime-500 px-4 py-2 rounded">Login</a></li>
+                    <div class="flex justify-end lg:hidden">
+                        <a href="cart.html"><i class="fa-solid fa-bars text-4xl"></i></a>
                     </div>
 
-                </div>
+                
             </nav>
         </div>
     </header>
 
     <!--hero part-->
-    <section class="bg-[url('image/back2.jpg')] bg-cover bg-no-repeat lg:min-h-[89vh] ">
+    <main>
+        <section class="bg-[url('image/back2.jpg')] bg-cover bg-no-repeat lg:min-h-[100vh]">
 
-        <div
-            class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52 min-h-[89vh] flex justify-items-start ">
-            <div class="text-box w-[50%]  min-h-[89vh] flex items-center">
-                <div>
-                    <p class=" ">
-                        <span class="text-lime-600 text-4xl sm:text-4xl lg:text-8xl">We offer the<br>
-                            Best</span><br>
-                        <span class="font-bold text-lime-900 text-4xl py-16 sm:text-4xl lg:text-6xl">Tech
-                            Resources</span><br>
-                        <span class="text-lime-800 font-bold sm:text-xl lg:text-2xl">
-                            Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit. Libero atque similique
-                            eius,<br>
-                            itaque mollitia iste et expedita labore <br>facilis in?
-                        </span>
-                    </p>
-                    <button class="bg-lime-500 px-4 py-3 rounded text-black font-semibold text-xl mt-4">Shop
-                        Now</button>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!--support-->
-    <section class="bg-lime-300">
-        <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <div class="support grid grid-rows-5 my-4 py-8 gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2">
-                <div class="bg-white px-16 py-8 rounded-2xl">
-                    <div class="text-center text-3xl "><i class="fa-regular fa-circle-question"></i></div>
-                    <div class="flex justify-center">
-                        <p class="text-4xl font-bold text-lime-800">24/7 Online Support</p>
-                    </div>
-                </div>
-                <div class="bg-white px-16 py-8 rounded-2xl">
-                    <div class="text-center text-3xl "><i class="fa-sharp fa-solid fa-truck"></i></div>
-                    <div class="flex justify-center">
-                        <p class="text-4xl font-bold text-lime-800">Fast Delivery</p>
-                    </div>
-                </div>
-                <div class="bg-white px-16 py-8 rounded-2xl">
-                    <div class="text-center text-3xl "><i class="fa-solid fa-money-bill"></i></div>
-                    <div class="flex justify-center">
-                        <p class="text-4xl font-bold text-lime-800">Fast CheckOut</p>
-                    </div>
-                </div>
-                <div class="bg-white px-16 py-8 rounded-2xl">
-                    <div class="text-center text-3xl "><i class="fa-solid fa-headphones"></i></div>
-                    <div class="flex justify-center">
-                        <p class="text-4xl font-bold text-lime-800">Customer Care</p>
-                    </div>
-                </div>
-                <div class="bg-white px-16 py-8 rounded-2xl">
-                    <div class="text-center text-3xl "><i class="fa-solid fa-tag"></i></div>
-                    <div class="flex justify-center">
-                        <p class="text-4xl font-bold text-lime-800">Best Offers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!--discount-->
-    <section class="bg-lime-300">
-        <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <div class="discount grid grid-rows-3 gap-4 py-4 text-center lg:flex lg:justify-between ">
-                <div class="happyHour">
-                    <h3 class="text-2xl text-lime-800 font-bold">
-                        50% OFF
-                    </h3>
-                    <p class="text-6xl text-lime-800 font-bold">
-                        HAPPY <br>HOURS
-                    </p>
-                    <p class="text-2xl text-lime-800 font-bold">5:00 pm - 6:00 pm</p>
-                </div>
-                <div class="animation flex items-center justify-center">
-                    <h1 class="animate-bounce text-6xl text-lime-800 font-bold italic ">DISCOUNT</h1>
-                </div>
-                <div class="SummerSale">
-                    <h3 class="text-2xl text-lime-800 font-bold">
-                        50% OFF
-                    </h3>
-                    <p class="text-6xl text-lime-800 font-bold">
-                        SUMMER <br> SALE
-                    </p>
-                    <p class="text-2xl text-lime-800 font-bold">Sept 18th-Oct 19th</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--new product-->
-    <section>
-        <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <div class="flex justify-center my-16">
-                <h1 class="font-bold text-lime-900 text-6xl">New Product</h1>
-            </div>
-            <div class="card grid gap-4 my-4 border-none lg:grid lg:grid-cols-3">
-                <div class="card1 shadow-lg p-4">
-                    <div class="image flex justify-center">
-                        <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                    </div>
+            <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52 min-h-[89vh] flex justify-items-start ">
+                <div class="text-box w-[50%]  min-h-[100vh] flex items-center">
                     <div>
-                        <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                            <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™ processing</span>
+                        <h1>
+                            <span class="text-lime-600 text-4xl sm:text-4xl lg:text-8xl">We offer the<br>
+                                Best</span><br>
+                            <span class="font-bold text-lime-900 text-4xl py-16 sm:text-4xl lg:text-6xl">Tech
+                                Resources</span><br>
+                            <span class="text-lime-800 font-bold sm:text-xl lg:text-2xl">
+                                Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit. Libero atque similique
+                                eius,<br>
+                                itaque mollitia iste et expedita labore <br>facilis in?
+                            </span>
                         </h1>
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                    </div>
-
-                </div>
-                <div class="card2 shadow-lg p-4">
-                    <div class="image flex justify-center">
-                        <img src="image/iphone14.jpg" alt="" class="h-60">
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold text-lime-800">Apple iPhone 14 Pro Max<br>
-                            <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™ processing</span>
-                        </h1>
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold text-lime-600">$149</h1>
+                        <button class="bg-lime-500 px-4 py-3 rounded text-black font-semibold text-xl mt-4">Shop
+                            Now</button>
                     </div>
                 </div>
-                <div class="card3 shadow-lg p-4">
-                    <div class="image flex justify-center">
-                        <img src="image/earbud.jpg" alt="" class="h-60">
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold text-lime-800">Apple AirPods Pro Truly Wireless Headphone<br>
-                            <span class="text-2xl font-bold text-lime-600"> Samsung Galaxy Buds+ Truly Wireless. 7.9.
-                                Neutral Sound.</span>
-                        </h1>
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold text-lime-600">$22</h1>
-                    </div>
-                </div>
-
+    
             </div>
-        </div>
-    </section>
-
-    <!--category-->
-    <section>
-        <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <div class="my-16">
-                <h1 class="flex justify-center font-bold text-lime-900 text-6xl">Category</h1>
-            </div>
-            <div class="card grid gap-8 my-4 border-none lg:grid lg:grid-cols-3">
-                <div class="card1 py-8 shadow-lg">
-                    <div class="image flex justify-center">
-                        <img src="image/mobile.jpg" alt="" class="h-40 w-50">
+    
+        </section>
+        <!--support-->
+        <section class="bg-lime-300">
+            <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+                <div class="support grid grid-rows-5 my-4 py-8 gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2">
+                    <div class="bg-white px-16 py-8 rounded-2xl">
+                        <div class="text-center text-3xl "><i class="fa-regular fa-circle-question"></i></div>
+                        <div class="flex justify-center">
+                            <p class="text-4xl font-bold text-lime-800 text-center">24/7 Online Support</p>
+                        </div>
                     </div>
-                    <div class="hedline flex justify-center my-4">
-                        <h3 class="text-3xl text-lime-700 font-semibold">Mobile Devices</h3>
+                    <div class="bg-white px-16 py-8 rounded-2xl">
+                        <div class="text-center text-3xl "><i class="fa-sharp fa-solid fa-truck"></i></div>
+                        <div class="flex justify-center">
+                            <p class="text-4xl font-bold text-lime-800">Fast Delivery</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card2 py-8 shadow-lg">
-                    <div class="image flex justify-center">
-                        <img src="image/laptop.jpg" alt="" class="h-40 w-50">
+                    <div class="bg-white px-16 py-8 rounded-2xl">
+                        <div class="text-center text-3xl "><i class="fa-solid fa-money-bill"></i></div>
+                        <div class="flex justify-center">
+                            <p class="text-4xl font-bold text-lime-800">Fast CheckOut</p>
+                        </div>
                     </div>
-                    <div class="hedline flex justify-center my-4">
-                        <h3 class="text-3xl text-lime-700 font-semibold">Laptop</h3>
+                    <div class="bg-white px-16 py-8 rounded-2xl">
+                        <div class="text-center text-3xl "><i class="fa-solid fa-headphones"></i></div>
+                        <div class="flex justify-center">
+                            <p class="text-4xl font-bold text-lime-800">Customer Care</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card3 py-8 shadow-lg">
-                    <div class="image flex justify-center">
-                        <img src="image/accessories.jpg" alt="" class="h-40 w-50">
-                    </div>
-                    <div class="hedline flex justify-center my-4">
-                        <h3 class="text-3xl text-lime-700 font-semibold">Accessories</h3>
+                    <div class="bg-white px-16 py-8 rounded-2xl">
+                        <div class="text-center text-3xl "><i class="fa-solid fa-tag"></i></div>
+                        <div class="flex justify-center">
+                            <p class="text-4xl font-bold text-lime-800">Best Offers</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center animate-bounce">
-                <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Explore
-                    More</button>
+    
+        </section>
+        <!--discount-->
+        <section class="bg-lime-300">
+            <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+                <div class="discount grid grid-rows-3 gap-4 py-4 text-center lg:flex lg:justify-between ">
+                    <div class="happyHour">
+                        <h3 class="text-2xl text-lime-800 font-bold">
+                            50% OFF
+                        </h3>
+                        <p class="text-6xl text-lime-800 font-bold">
+                            HAPPY <br>HOURS
+                        </p>
+                        <p class="text-2xl text-lime-800 font-bold">5:00 pm - 6:00 pm</p>
+                    </div>
+                    <div class="animation flex items-center justify-center">
+                        <h1 class="animate-bounce text-6xl text-lime-800 font-bold italic ">DISCOUNT</h1>
+                    </div>
+                    <div class="SummerSale">
+                        <h3 class="text-2xl text-lime-800 font-bold">
+                            50% OFF
+                        </h3>
+                        <p class="text-6xl text-lime-800 font-bold">
+                            SUMMER <br> SALE
+                        </p>
+                        <p class="text-2xl text-lime-800 font-bold">Sept 18th-Oct 19th</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--engineering-->
-    <section>
-        <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <div class="my-16">
-                <h1 class="flex justify-center font-bold text-lime-900 text-6xl text-justify">Our Engineering Services</h1>
+        </section>
+        <!--new product-->
+        <section>
+            <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+                <div class="flex justify-center my-16">
+                    <h1 class="font-bold text-lime-900 text-6xl">New Product</h1>
+                </div>
+                <div class="card grid gap-4 my-4 border-none lg:grid lg:grid-cols-3">
+                    <div class="card1 shadow-lg p-4">
+                        <div class="image flex justify-center">
+                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
+                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™ processing</span>
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
+                        </div>
+    
+                    </div>
+                    <div class="card2 shadow-lg p-4">
+                        <div class="image flex justify-center">
+                            <img src="image/iphone14.jpg" alt="" class="h-60">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-lime-800">Apple iPhone 14 Pro Max<br>
+                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™ processing</span>
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-lime-600">$149</h1>
+                        </div>
+                    </div>
+                    <div class="card3 shadow-lg p-4">
+                        <div class="image flex justify-center">
+                            <img src="image/earbud.jpg" alt="" class="h-60">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-lime-800">Apple AirPods Pro Truly Wireless Headphone<br>
+                                <span class="text-2xl font-bold text-lime-600"> Samsung Galaxy Buds+ Truly Wireless. 7.9.
+                                    Neutral Sound.</span>
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-lime-600">$22</h1>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!--category-->
+        <section>
+            <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+                <div class="my-16">
+                    <h1 class="flex justify-center font-bold text-lime-900 text-6xl">Category</h1>
+                </div>
+                <div class="card grid gap-8 my-4 border-none lg:grid lg:grid-cols-3">
+                    <div class="card1 py-8 shadow-lg">
+                        <div class="image flex justify-center">
+                            <img src="image/mobile.jpg" alt="" class="h-40 w-50">
+                        </div>
+                        <div class="hedline flex justify-center my-4">
+                            <h3 class="text-3xl text-lime-700 font-semibold">Mobile Devices</h3>
+                        </div>
+                    </div>
+                    <div class="card2 py-8 shadow-lg">
+                        <div class="image flex justify-center">
+                            <img src="image/laptop.jpg" alt="" class="h-40 w-50">
+                        </div>
+                        <div class="hedline flex justify-center my-4">
+                            <h3 class="text-3xl text-lime-700 font-semibold">Laptop</h3>
+                        </div>
+                    </div>
+                    <div class="card3 py-8 shadow-lg">
+                        <div class="image flex justify-center">
+                            <img src="image/accessories.jpg" alt="" class="h-40 w-50">
+                        </div>
+                        <div class="hedline flex justify-center my-4">
+                            <h3 class="text-3xl text-lime-700 font-semibold">Accessories</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center ">
+                    <a href="category.html"><button
+                        class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4 animate-bounce">Explore
+                        More</button></a>
+                </div>
+            </div>
+        </section>
+        <!--engineering-->
+        <section>
+            <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+                <div class="my-16">
+                    <h1 class="flex justify-center font-bold text-lime-900 text-6xl text-justify">Our Engineering Services
+                    </h1>
+                    <div class="flex justify-center my-4">
+                        <p class="text-lime-600 text-2xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Error fugit ab, esse exercitationem odio repudiandae modi enim in incidunt impedit.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4">
+                    <div class="image">
+                        <img src="image/eng1.jpg" alt="" class="max-w-full h-auto">
+                    </div>
+                    <div class="image">
+                        <img src="image/eng2.jpg" alt="" class="max-w-full h-auto">
+                    </div>
+                    <div class="image">
+                        <img src="image/eng3.jpg" alt="" class="max-w-full h-auto">
+                    </div>
+                    <div class="image">
+                        <img src="image/eng4.jpg" alt="" class="max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About-->
+        <section class="bg-lime-300">
+            <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+                <div class="flex justify-center pt-8">
+                    <h1 class="text-4xl text-lime-800 font-bold ">What Customer Say</h1>
+                </div>
                 <div class="flex justify-center my-4">
-                    <p class="text-lime-600 text-2xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Error fugit ab, esse exercitationem odio repudiandae modi enim in incidunt impedit.</p>
+                    <h1 class="text-4xl text-lime-800 font-bold">About Us</h1>
+                </div>
+                <div class="customer grid grid-rows-3 gap-8 py-16 pb-24 lg:flex lg:justify-between ">
+                    <div class="customer1 bg-white px-16 py-8">
+                        <div class="image flex justify-center">
+                            <img src="image/cust1.jpg" alt="" class="h-24 rounded-full">
+                        </div>
+                        <div class="text my-4">
+                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae minima
+                                saepe odio est?
+                                Temporibus fugit numquam, omnis, sit animi, nesciunt dolore voluptatem in tenetur voluptatum
+                                itaque. Sint ratione quasi libero aperiam suscipit, quae sed, laborum voluptate facilis
+                                numquam vel unde.</p>
+                        </div>
+                        <div class="ratings text-xl flex justify-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                        </div>
+                    </div>
+                    <div class="customer2 bg-white px-16 py-8">
+                        <div class="image flex justify-center">
+                            <img src="image/cust2.jpg" alt="" class="h-24 w-24 rounded-full">
+                        </div>
+                        <div class="text my-4">
+                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae minima
+                                saepe odio est?
+                                Temporibus fugit numquam, omnis, sit animi, nesciunt dolore voluptatem in tenetur voluptatum
+                                itaque. Sint ratione quasi libero aperiam suscipit, quae sed, laborum voluptate facilis
+                                numquam vel unde.</p>
+                        </div>
+                        <div class="ratings text-xl flex justify-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                        </div>
+                    </div>
+                    <div class="customer3 bg-white px-16 py-8">
+                        <div class="image flex justify-center">
+                            <img src="image/cust3.jpg" alt="" class="h-24 w-24 rounded-full">
+                        </div>
+                        <div class="text my-4">
+                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae minima
+                                saepe odio est?
+                                Temporibus fugit numquam, omnis, sit animi, nesciunt dolore voluptatem in tenetur voluptatum
+                                itaque. Sint ratione quasi libero aperiam suscipit, quae sed, laborum voluptate facilis
+                                numquam vel unde.</p>
+                        </div>
+                        <div class="ratings text-xl flex justify-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center ">
+                    <a href="about.html"><button
+                        class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mb-20 animate-bounce">More</button></a>
                 </div>
             </div>
-            <div class="grid grid-cols-2 grid-rows-2 gap-4">
-                <div class="image">
-                    <img src="image/eng1.jpg" alt="" class="max-w-full h-auto">
-                </div>
-                <div class="image">
-                    <img src="image/eng2.jpg" alt="" class="max-w-full h-auto">
-                </div>
-                <div class="image">
-                    <img src="image/eng3.jpg" alt="" class="max-w-full h-auto">
-                </div>
-                <div class="image">
-                    <img src="image/eng4.jpg" alt="" class="max-w-full h-auto">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--About-->
-    <section class="bg-lime-300">
-        <div class="container mx-auto px-4 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <div class="flex justify-center pt-8">
-                <h1 class="text-4xl text-lime-800 font-bold ">What Customer Say</h1>
-            </div>
-            <div class="flex justify-center my-4">
-                <h1 class="text-4xl text-lime-800 font-bold">About Us</h1>
-            </div>
-            <div class="customer grid grid-rows-3 gap-8 py-16 pb-24 lg:flex lg:justify-between ">
-                <div class="customer1 bg-white px-16 py-8">
-                    <div class="image flex justify-center">
-                        <img src="image/cust1.jpg" alt="" class="h-24 rounded-full">
-                    </div>
-                    <div class="text my-4">
-                        <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae minima
-                            saepe odio est?
-                            Temporibus fugit numquam, omnis, sit animi, nesciunt dolore voluptatem in tenetur voluptatum
-                            itaque. Sint ratione quasi libero aperiam suscipit, quae sed, laborum voluptate facilis
-                            numquam vel unde.</p>
-                    </div>
-                    <div class="ratings text-xl flex justify-center">
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                    </div>
-                </div>
-                <div class="customer2 bg-white px-16 py-8">
-                    <div class="image flex justify-center">
-                        <img src="image/cust2.jpg" alt="" class="h-24 w-24 rounded-full">
-                    </div>
-                    <div class="text my-4">
-                        <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae minima
-                            saepe odio est?
-                            Temporibus fugit numquam, omnis, sit animi, nesciunt dolore voluptatem in tenetur voluptatum
-                            itaque. Sint ratione quasi libero aperiam suscipit, quae sed, laborum voluptate facilis
-                            numquam vel unde.</p>
-                    </div>
-                    <div class="ratings text-xl flex justify-center">
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                    </div>
-                </div>
-                <div class="customer3 bg-white px-16 py-8">
-                    <div class="image flex justify-center">
-                        <img src="image/cust3.jpg" alt="" class="h-24 w-24 rounded-full">
-                    </div>
-                    <div class="text my-4">
-                        <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae minima
-                            saepe odio est?
-                            Temporibus fugit numquam, omnis, sit animi, nesciunt dolore voluptatem in tenetur voluptatum
-                            itaque. Sint ratione quasi libero aperiam suscipit, quae sed, laborum voluptate facilis
-                            numquam vel unde.</p>
-                    </div>
-                    <div class="ratings text-xl flex justify-center">
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                        <i class="fa-solid fa-star text-amber-400"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!--footer-->
     <footer class="bg-lime-300">
         <div class="container mx-auto px-4 py-16 my-8 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
