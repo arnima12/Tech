@@ -5,6 +5,12 @@ login.addEventListener('click',function(){
     loginPage.style.display= "block";
     
 })
+const closeLogin = document.getElementById("closeLogin");
+closeLogin.addEventListener('click',function(){
+    const loginPage = document.getElementById("loginPage");
+    loginPage.style.display= "none";
+    
+})
 const register = document.getElementById("register");
 register.addEventListener('click',function(){
     
@@ -18,9 +24,5 @@ closeRegister.addEventListener('click',function(){
     registerPage.style.display= "none";
     
 })
-const closeLogin = document.getElementById("closeLogin");
-closeLogin.addEventListener('click',function(){
-    const loginPage = document.getElementById("loginPage");
-    loginPage.style.display= "none";
-    
-})
+
+

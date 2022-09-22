@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bg-indigo-900 fixed inset-x-0 translate-y-0 z-40 transition-all ease-in-out duration-300">
+        <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+            <nav class="flex gap-4 p-4">
+                <div class="flex-none w-[20%]">
+                    <img src="image/logo.png" alt="logo" class="max-w-xs max-h-12">
+                </div>
+
+                <div
+                    class="flex gap-4 w-[80%] hidden text-white font-semibold text-xl list-none lg:flex">
+                    <div>
+                        <a href="#"><input type="text" placeholder="Search"
+                                class="text-center py-2 rounded w-[16rem]"></a>
+                    </div>
+                    <div>
+                        <ul class="flex justify-between gap-4 items-center lg:flex">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="category.html">Category</a></li>
+                            
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                            <li><button id="login"
+                                    class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-2 rounded-lg">Login</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="flex justify-end lg:hidden">
+                    <a id=""><i class="fa-solid fa-bars text-4xl"></i></a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <section>
+        <!-- login -->
+        <div id="loginPage" class="bg-black bg-opacity-50 fixed z-40 inset-0 items-center hidden">
+            <div class="p-32">
+                <div class="flex justify-end">
+                    <button id="closeLogin"><i class="fa-solid fa-xmark text-4xl text-white"></i></button>
+                </div>
+                <div class="flex justify-center">
+                    <div class="bg-gradient-to-r from-indigo-700 to-indigo-400 rounded-2xl rounded-lg px-16 py-8">
+                        <div class="flex justify-center">
+                            <h3 class="text-4xl text-white font-semibold pb-8">Login</h3>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <div class="flex flex-col justify-center">
+                                <label for="email" class="text-slate-300 text-2xl">Email:</label><br>
+                                <input type="text" id="email" class="border-slate-400 border-2 w-[20rem] py-2 rounded-xl"><br>
+                                <label for="password" class="text-slate-300 text-2xl">Password:</label><br>
+                                <input type="password" id="password" class="border-slate-400 border-2 w-[20rem] py-2 rounded-xl"><br>
+                                <div class="flex justify-center my-4">
+                                    <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 mb4 rounded text-white font-bold text-2xl"><a
+                                            href="index.html"><input type="submit" value="Submit"></a></button>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mb-16 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+            <h1 class="font-bold text-black text-4xl pt-32 text-center sm:text-4xl lg:text-6xl">Get In Touch</h1>
+            <div class="flex flex-row justify-between pt-24">
+                <div class="flex flex-col">
+                    <div>
+                        <div class="flex flex-row gap-2 pb-4 text-2xl">
+                            <p><a><i class="fa-solid fa-phone"></i></a> </p>
+                            01*********
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.4080090295824!2d90.3554531500179!3d23.839641291203648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1410ff7f515%3A0x7655eae2540befbe!2z4Kas4Ka-4KaC4Kay4Ka-4Kam4KeH4Ka2IOCmh-CmieCmqOCmv-CmreCmvuCmsOCnjeCmuOCmv-Cmn-CmvyDgpoXgpqwg4Kaq4KeN4Kaw4Kar4KeH4Ka24Kao4Ka-4Kay4Ka4ICjgpqzgpr_gpofgpongpqrgpr8p!5e0!3m2!1sbn!2sbd!4v1663864207078!5m2!1sbn!2sbd"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <input type="text" placeholder="Name"
+                        class="px-10 py-4 w-[24rem] border-slate-500 border-1 rounded-lg text-xl"><br>
+                    <input type="text" placeholder="Email"
+                        class="px-10 py-4 w-[24rem] border-slate-500 border-1 rounded-lg text-xl"><br>
+                    <input type="text" placeholder="Message"
+                        class="px-10 pt-4 pb-[20rem] w-[24rem] border-slate-500 border-2 rounded-lg text-xl">
+                    <button
+                        class="bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-3 rounded-lg text-white font-semibold text-xl w-[12rem] mt-8">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--footer-->
+    <footer class="bg-indigo-400">
+        <div class="container mx-auto px-4 py-16 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+            <div class="grid gap-4 lg:grid lg:grid-cols-4 ">
+                <div>
+                    <h1 class="text-4xl text-white font-bold">Get Start</h1>
+                    <div class="getStart">
+                        <ul class="text-xl pt-4 font-semibold space-y-2">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex items-center lg:items-start">
+                    <div class="">
+                        <h1 class="text-4xl text-white font-bold">Category</h1>
+                        <div class="category">
+                            <ul class="text-xl pt-4 font-semibold space-y-2">
+                                <li><a href="#">Mobile Devices</a></li>
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center lg:items-start">
+                    <div>
+                        <h1 class="text-4xl text-white font-bold">Get Help</h1>
+                        <div class="getHelp">
+                            <ul class="text-xl pt-4 font-semibold  space-y-2">
+                                <li><a href="#">How It Work</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Products Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center lg:items-start">
+                    <div>
+                        <h1 class="text-4xl text-white font-bold">About Us</h1>
+                        <p class="pt-4 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Praesentium dolor
+                            accusamus, blanditiis
+                            perspiciatis nam rem repellendus nisi fugit libero labore sit doloribus inventore, ad qui
+                            obcaecati mollitia fugiat, id molestiae!</p>
+                        <div class="flex justify-start gap-4 pt-4">
+                            <div>
+                                <i class="fa-brands fa-twitter text-3xl"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-facebook text-3xl"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-instagram text-3xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

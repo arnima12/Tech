@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--font awesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -13,46 +18,78 @@
 </head>
 
 <body>
-    <header class="bg-lime-300 fixed inset-x-0 translate-y-0 z-40 transition-all ease-in-out duration-300">
+    <header class="bg-indigo-900 fixed inset-x-0 translate-y-0 z-40 transition-all ease-in-out duration-300">
         <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <nav class="flex justify-between p-4">
+            <nav class="flex justify-between p-4 ">
                 <div class="flex-none w-[20%]">
                     <img src="image/logo.png" alt="logo" class="max-w-xs max-h-12">
                 </div>
 
                 <div
-                    class="flex justify-between gap-4 w-[80%] hidden text-black font-semibold text-xl list-none lg:flex">
+                    class="flex justify-between gap-4 w-[80%] hidden text-white font-semibold text-xl list-none lg:flex">
                     <div>
-                        <a href="#"><input type="text" placeholder="Search" class="text-center py-2 rounded"></a>
+                        <a href="#"><input type="text" placeholder="Search" class="text-center py-2 rounded w-[10rem]"></a>
                     </div>
                     <div>
-                        <ul class="flex justify-between gap-4 lg:flex">
+                        <ul class="flex justify-between gap-4 items-center lg:flex">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="product.html">Product</a></li>
                             <li><a href="category.html">Category</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                            <li><a href="#" class="bg-lime-500 px-4 py-2 rounded">Login</a></li>
+                            
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                            <li><button id="login" class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-2 rounded-lg">Login</button></li>
                         </ul>
                     </div>
+
                 </div>
                 <div class="flex justify-end lg:hidden">
-                    <a href="cart.html"><i class="fa-solid fa-bars text-4xl"></i></a>
+                    <a id=""><i class="fa-solid fa-bars text-4xl"></i></a>
                 </div>
+
 
             </nav>
         </div>
     </header>
-    <section class="bg-slate-300">
+    <section>
+        <!-- login -->
+        <div id="loginPage" class="bg-black bg-opacity-50 fixed z-40 inset-0 items-center hidden">
+            <div class="p-32">
+                <div class="flex justify-end">
+                    <button id="closeLogin"><i class="fa-solid fa-xmark text-4xl text-white"></i></button>
+                </div>
+                <div class="flex justify-center">
+                    <div class="bg-gradient-to-r from-indigo-700 to-indigo-400 rounded-2xl rounded-lg px-16 py-8">
+                        <div class="flex justify-center">
+                            <h3 class="text-4xl text-white font-semibold pb-8">Login</h3>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <div class="flex flex-col justify-center">
+                                <label for="email" class="text-slate-300 text-2xl">Email:</label><br>
+                                <input type="text" id="email" class="border-slate-400 border-2 w-[20rem] py-2 rounded-xl"><br>
+                                <label for="password" class="text-slate-300 text-2xl">Password:</label><br>
+                                <input type="password" id="password" class="border-slate-400 border-2 w-[20rem] py-2 rounded-xl"><br>
+                                <div class="flex justify-center my-4">
+                                    <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 mb4 rounded text-white font-bold text-2xl"><a
+                                            href="index.html"><input type="submit" value="Submit"></a></button>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div class="container mx-auto px-4 py-32 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
-            <div class="grid gap-20 lg:grid-cols-2">
+            <div class="grid gap-20 lg:grid-cols-2 my-16">
 
                 <div class="flex items-center">
                     <div>
                         <div class=" flex items-center">
-                            <h2 class="text-4xl pb-8 font-bold text-lime-900">
+                            <h2 class="text-4xl pb-8 font-bold text-black">
                                 Message from CEO
                             </h2>
                         </div>
@@ -75,53 +112,53 @@
         </div>
     </section>
     <!--worker-->
-    <section class="bg-lime-300">
+    <section class="bg-indigo-400">
         <div class="container mx-auto px-4 py-32 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
             <div class="grid gap-8 lg:grid-cols-4">
-                <div class="shadow-lg p-4">
+                <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col gap-4">
                     <div class="flex justify-center">
                         <img src="image/worker.jpg" alt="" class="rounded-full">
                     </div>
                     <div class="flex justify-center pt-4">
-                        <h3 class="text-2xl font-bold text-lime-900">Web Developer</h3>
+                        <h3 class="text-2xl font-bold text-black">Web Developer</h3>
                     </div>
-                    <div class="flex justify-center text-justify">
+                    <div class="flex justify-center text-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in natus accusamus. Hic,
                             corrupti explicabo. Laudantium quam aperiam in temporibus?</p>
                     </div>
                 </div>
-                <div class="shadow-lg p-4">
+                <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col gap-4">
                     <div class="flex justify-center">
                         <img src="image/worker.jpg" alt="" class="rounded-full">
                     </div>
                     <div class="flex justify-center pt-4">
-                        <h3 class="text-2xl font-bold text-lime-900">Web Developer</h3>
+                        <h3 class="text-2xl font-bold text-black">Web Developer</h3>
                     </div>
-                    <div class="flex justify-center text-justify">
+                    <div class="flex justify-center text-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in natus accusamus. Hic,
                             corrupti explicabo. Laudantium quam aperiam in temporibus?</p>
                     </div>
                 </div>
-                <div class="shadow-lg p-4">
+                <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col gap-4">
                     <div class="flex justify-center">
                         <img src="image/worker.jpg" alt="" class="rounded-full">
                     </div>
                     <div class="flex justify-center pt-4">
-                        <h3 class="text-2xl font-bold text-lime-900">Web Developer</h3>
+                        <h3 class="text-2xl font-bold text-black">Web Developer</h3>
                     </div>
-                    <div class="flex justify-center text-justify">
+                    <div class="flex justify-center text-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in natus accusamus. Hic,
                             corrupti explicabo. Laudantium quam aperiam in temporibus?</p>
                     </div>
                 </div>
-                <div class="shadow-lg p-4">
+                <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col gap-4">
                     <div class="flex justify-center">
                         <img src="image/worker.jpg" alt="" class="rounded-full">
                     </div>
                     <div class="flex justify-center pt-4">
-                        <h3 class="text-2xl font-bold text-lime-900">Web Developer</h3>
+                        <h3 class="text-2xl font-bold text-black">Web Developer</h3>
                     </div>
-                    <div class="flex justify-center text-justify">
+                    <div class="flex justify-center text-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in natus accusamus. Hic,
                             corrupti explicabo. Laudantium quam aperiam in temporibus?</p>
                     </div>
@@ -130,12 +167,12 @@
             </div>
         </div>
     </section>
-    <section class="bg-slate-300">
+    <section>
         <div class="container mx-auto px-4 py-32 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
         <div class="grid gap-8 lg:grid-cols-4">
-            <div class="flex-row justify-center gap-4 shadow-lg p-4">
+            <div class="about-card hover:-translate-y-6 duration-150 flex-row justify-center gap-4 shadow-lg p-4">
                <div class="flex justify-center">
-                <h3 class="text-3xl text-lime-900 font-bold pb-8 h-24">
+                <h3 class="text-3xl text-indigo-900 font-bold pb-8 h-24">
                     History of The Company
                 </h3>
                </div>
@@ -145,10 +182,10 @@
                         fuga corporis dicta fugit earum ullam in debitis .</p>
                 </div>
             </div>
-            <div class="flex-row justify-center gap-4 shadow-lg p-4">
+            <div class="about-card hover:-translate-y-6 duration-150 flex-row justify-center gap-4 shadow-lg p-4">
                 
                     <div class="flex justify-center">
-                        <h3 class="text-3xl text-lime-900 font-bold pb-8 h-24">
+                        <h3 class="text-3xl text-indigo-900 font-bold pb-8 h-24">
                             Our Goal
                         </h3>
                     </div>
@@ -159,9 +196,9 @@
                         fuga corporis dicta fugit earum ullam in debitis </p>
                 </div>
             </div>
-            <div class="flex-row justify-center gap-4 shadow-lg p-4">
+            <div class="about-card hover:-translate-y-6 duration-150 flex-row justify-center gap-4 shadow-lg p-4">
                 <div class="flex justify-center">
-                    <h3 class="text-3xl text-lime-900 font-bold pb-8 h-24">
+                    <h3 class="text-3xl text-indigo-900 font-bold pb-8 h-24">
                         About Tech
                     </h3>
                 </div>
@@ -171,9 +208,9 @@
                     fuga corporis dicta fugit earum ullam in debitis</p>
                     </div>
             </div>
-            <div class="flex-row justify-center gap-4 shadow-lg p-4">
+            <div class="about-card hover:-translate-y-6 duration-150 flex-row justify-center gap-4 shadow-lg p-4">
                 <div class="flex justify-center">
-                    <h3 class="text-3xl text-lime-900 font-bold pb-8 h-24">
+                    <h3 class="text-3xl text-indigo-900 font-bold pb-8 h-24">
                         Why Tech?
                     </h3>
                 </div>
@@ -187,13 +224,13 @@
         </div>
     </section>
     <!--footer-->
-    <footer class="bg-lime-300">
+    <footer class="bg-indigo-400">
         <div class="container mx-auto px-4 py-16 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
             <div class="grid gap-4 lg:grid lg:grid-cols-4 ">
-                <div class="">
-                    <h1 class="text-4xl text-lime-800 font-bold">Get Start</h1>
+                <div>
+                    <h1 class="text-4xl text-white font-bold">Get Start</h1>
                     <div class="getStart">
-                        <ul class="text-2xl pt-4 font-bold">
+                        <ul class="text-xl pt-4 font-semibold space-y-2">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Product</a></li>
@@ -205,9 +242,9 @@
                 </div>
                 <div class="flex items-center lg:items-start">
                     <div class="">
-                        <h1 class="text-4xl text-lime-800 font-bold">Category</h1>
+                        <h1 class="text-4xl text-white font-bold">Category</h1>
                         <div class="category">
-                            <ul class="text-2xl pt-4 font-bold">
+                            <ul class="text-xl pt-4 font-semibold space-y-2">
                                 <li><a href="#">Mobile Devices</a></li>
                                 <li><a href="#">Laptop</a></li>
                                 <li><a href="#">Accessories</a></li>
@@ -217,9 +254,9 @@
                 </div>
                 <div class="flex items-center lg:items-start">
                     <div>
-                        <h1 class="text-4xl text-lime-800 font-bold">Get Help</h1>
+                        <h1 class="text-4xl text-white font-bold">Get Help</h1>
                         <div class="getHelp">
-                            <ul class="text-2xl pt-4 font-bold">
+                            <ul class="text-xl pt-4 font-semibold  space-y-2">
                                 <li><a href="#">How It Work</a></li>
                                 <li><a href="#">FAQs</a></li>
                                 <li><a href="#">Products Support</a></li>
@@ -229,8 +266,8 @@
                 </div>
                 <div class="flex items-center lg:items-start">
                     <div>
-                        <h1 class="text-4xl text-lime-800 font-bold">About Us</h1>
-                        <p class="pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dolor
+                        <h1 class="text-4xl text-white font-bold">About Us</h1>
+                        <p class="pt-4 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dolor
                             accusamus, blanditiis
                             perspiciatis nam rem repellendus nisi fugit libero labore sit doloribus inventore, ad qui
                             obcaecati mollitia fugiat, id molestiae!</p>
@@ -253,6 +290,7 @@
     </footer>
     <!--script tag-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

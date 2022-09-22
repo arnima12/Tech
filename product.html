@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+   <!--css link-->
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -14,233 +18,364 @@
 </head>
 
 <body>
-    <header class="bg-lime-300 fixed inset-x-0 translate-y-0 z-40 transition-all ease-in-out duration-300">
-        <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-4 2xl:px-4">
-            <nav class="flex justify-between p-4">
-                <div class="logo flex-none w-[20%]">
-                    <li class="list-none"><img src="image/logo.png" alt="logo" class="max-w-xs max-h-12"></li>
+    <header class="bg-indigo-900 fixed inset-x-0 translate-y-0 z-40 transition-all ease-in-out duration-300">
+        <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+            <nav class="flex gap-2 p-4">
+                <div class="flex-none w-[20%]">
+                    <img src="image/logo.png" alt="logo" class="max-w-xs max-h-12">
                 </div>
-                <div class="list flex w-[80%] justify-between gap-6 text-black font-semibold text-xl list-none">
-                    <div class="">
-                        <li><a href="#"><input type="text" placeholder="Search" class="text-center py-2 rounded"></a>
-                        </li>
+
+                <div
+                    class="flex gap-4 w-[80%] hidden text-white font-semibold text-xl list-none lg:flex">
+                    <div>
+                        <a href="#"><input type="text" placeholder="Search" class="text-center py-2 rounded w-[16rem]"></a>
                     </div>
-                    <div class="xl:hidden">
-                        <i class="fa-solid fa-bars text-4xl"></i>
+                    <div>
+                        <ul class="flex justify-between gap-4 items-center lg:flex">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="category.html">Category</a></li>
+                            
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                            <li><button id="login" class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-2 rounded-lg">Login</button></li>
+                        </ul>
                     </div>
-                    <div class="flex justify-between gap-6 hidden xl:flex">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="category.html">Category</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                        <li><a href="#" class="bg-lime-500 px-4 py-2 rounded">Login</a></li>
-                    </div>
+
                 </div>
+                <div class="flex justify-end lg:hidden">
+                    <a id=""><i class="fa-solid fa-bars text-4xl"></i></a>
+                </div>
+
+
             </nav>
         </div>
     </header>
     <!--section-->
     <main>
         <section>
+            <!-- login -->
+            <div id="loginPage" class="bg-black bg-opacity-50 fixed z-40 inset-0 items-center hidden">
+                <div class="p-32">
+                    <div class="flex justify-end">
+                        <button id="closeLogin"><i class="fa-solid fa-xmark text-4xl text-white"></i></button>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="bg-gradient-to-r from-indigo-700 to-indigo-400 rounded-2xl rounded-lg px-16 py-8">
+                            <div class="flex justify-center">
+                                <h3 class="text-4xl text-white font-semibold pb-8">Login</h3>
+                            </div>
+    
+                            <div class="flex justify-center">
+                                <div class="flex flex-col justify-center">
+                                    <label for="email" class="text-slate-300 text-2xl">Email:</label><br>
+                                    <input type="text" id="email" class="border-slate-400 border-2 w-[20rem] py-2 rounded-xl"><br>
+                                    <label for="password" class="text-slate-300 text-2xl">Password:</label><br>
+                                    <input type="password" id="password" class="border-slate-400 border-2 w-[20rem] py-2 rounded-xl"><br>
+                                    <div class="flex justify-center my-4">
+                                        <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 mb4 rounded text-white font-bold text-2xl"><a
+                                                href="index.html"><input type="submit" value="Submit"></a></button>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
                 <div>
-                    <h1 class="font-bold text-lime-900 text-4xl pt-24 text-center sm:text-4xl lg:text-6xl">All Products
+                    <h1 class="font-bold text-black text-4xl pt-32 text-center sm:text-4xl lg:text-6xl">All Products
                     </h1>
                 </div>
-                <div class="grid gap-4 lg:grid-cols-4">
-                    <div class="card1 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
+                <div class="grid gap-4 lg:grid-cols-4 my-16 pb-16">
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
                         </div>
                         <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
                             </h1>
                         </div>
                         <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
                         </div>
                         <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
                                 to
                                 Cart</button>
                         </div>
 
                     </div>
-                    <div class="card2 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
                         </div>
                         <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
                             </h1>
                         </div>
                         <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
                         </div>
                         <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
                                 to
                                 Cart</button>
                         </div>
-                    </div>
-                    <div class="card3 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="card4 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="card5 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="card6 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="card7 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="card8 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="card9 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="card10 shadow-lg p-4">
-                        <div class="image flex justify-center">
-                            <img src="image/lenovo ipad3.jpg" alt="" class="h-60">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-800">IdeaPad 3 (15”, Intel) Laptop<br>
-                                <span class="text-2xl font-bold text-lime-600">Swift 10th Gen Intel® Core™
-                                    processing</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-bold text-lime-600">$189</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <button class="bg-lime-500 px-4 py-3 rounded-lg text-black font-semibold text-xl mt-4">Add
-                                to
-                                Cart</button>
 
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                    <div class="shadow-lg bg-white p-6 rounded flex flex-col gap-4">
+                        <div class="image flex justify-center border-indigo-500 border-dashed border-b-2 py-8">
+                            <img src="image/laptop.jpg" alt="" class="h-50 rounded">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-black">IdeaPad 3 (15”, Intel) Laptop
+                            </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-indigo-600">$189</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="bg-indigo-500 px-4 py-3 rounded-lg text-white font-semibold text-xl mt-4">Add
+                                to
+                                Cart</button>
                         </div>
 
                     </div>
@@ -250,13 +385,13 @@
         </section>
     </main>
     <!--footer-->
-    <footer class="bg-lime-300">
+    <footer class="bg-indigo-400">
         <div class="container mx-auto px-4 py-16 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
             <div class="grid gap-4 lg:grid lg:grid-cols-4 ">
-                <div class="">
-                    <h1 class="text-4xl text-lime-800 font-bold">Get Start</h1>
+                <div>
+                    <h1 class="text-4xl text-white font-bold">Get Start</h1>
                     <div class="getStart">
-                        <ul class="text-2xl pt-4 font-bold">
+                        <ul class="text-xl pt-4 font-semibold space-y-2">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Product</a></li>
@@ -268,9 +403,9 @@
                 </div>
                 <div class="flex items-center lg:items-start">
                     <div class="">
-                        <h1 class="text-4xl text-lime-800 font-bold">Category</h1>
+                        <h1 class="text-4xl text-white font-bold">Category</h1>
                         <div class="category">
-                            <ul class="text-2xl pt-4 font-bold">
+                            <ul class="text-xl pt-4 font-semibold space-y-2">
                                 <li><a href="#">Mobile Devices</a></li>
                                 <li><a href="#">Laptop</a></li>
                                 <li><a href="#">Accessories</a></li>
@@ -280,9 +415,9 @@
                 </div>
                 <div class="flex items-center lg:items-start">
                     <div>
-                        <h1 class="text-4xl text-lime-800 font-bold">Get Help</h1>
+                        <h1 class="text-4xl text-white font-bold">Get Help</h1>
                         <div class="getHelp">
-                            <ul class="text-2xl pt-4 font-bold">
+                            <ul class="text-xl pt-4 font-semibold  space-y-2">
                                 <li><a href="#">How It Work</a></li>
                                 <li><a href="#">FAQs</a></li>
                                 <li><a href="#">Products Support</a></li>
@@ -292,8 +427,8 @@
                 </div>
                 <div class="flex items-center lg:items-start">
                     <div>
-                        <h1 class="text-4xl text-lime-800 font-bold">About Us</h1>
-                        <p class="pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dolor
+                        <h1 class="text-4xl text-white font-bold">About Us</h1>
+                        <p class="pt-4 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dolor
                             accusamus, blanditiis
                             perspiciatis nam rem repellendus nisi fugit libero labore sit doloribus inventore, ad qui
                             obcaecati mollitia fugiat, id molestiae!</p>
@@ -314,9 +449,9 @@
 
         </div>
     </footer>
-
     <!--script tag-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
