@@ -11,6 +11,27 @@ html,body{
 .about-card{
     background: linear-gradient(0deg,rgba(115, 39, 245, 0.35),rgba(255,81,47,0) 70%);
 }
+.menu {
+    display: none;
+  position: absolute;
+  top:5rem;
+  left:0;
+  right:0;
+  
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+
+}
+.menu li{
+    color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  
+}
 
 
 
